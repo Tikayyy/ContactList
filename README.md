@@ -9,4 +9,4 @@
 * Microsoft.VisualStudio.Web.CodeGeneration.Design v3.1.5
 
 Проект создан с использование Razor Pages в ASP.NET Core v3.1.
-Для создания Базы Данных в Packet Manager Console необходимо прописать компанду "Update-Database", после чего локальная база данных "Contacts" будет создана автоматически.
+Для создания Базы Данных в Package Manager Console необходимо прописать компанду "Update-Database", после чего локальная база данных "Contacts" будет создана автоматически.
