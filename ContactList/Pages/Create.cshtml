@@ -1,0 +1,91 @@
+﻿@page
+@model ContactList.Pages.CreateModel
+
+@{
+    ViewData["Title"] = "Создание контакта";
+}
+
+<h1>Создание контакта</h1>
+
+<h4>Данные контакта</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ContactModel.Name" class="control-label"></label>
+                <input asp-for="ContactModel.Name" class="form-control" />
+                <span asp-validation-for="ContactModel.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContactModel.Surname" class="control-label"></label>
+                <input asp-for="ContactModel.Surname" class="form-control" />
+                <span asp-validation-for="ContactModel.Surname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContactModel.Patronymic" class="control-label"></label>
+                <input asp-for="ContactModel.Patronymic" class="form-control" />
+                <span asp-validation-for="ContactModel.Patronymic" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContactModel.Birthday" class="control-label"></label>
+                <input asp-for="ContactModel.Birthday" class="form-control" />
+                <span asp-validation-for="ContactModel.Birthday" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContactModel.Company" class="control-label"></label>
+                <input asp-for="ContactModel.Company" class="form-control" />
+                <span asp-validation-for="ContactModel.Company" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContactModel.Position" class="control-label"></label>
+                <input asp-for="ContactModel.Position" class="form-control" />
+                <span asp-validation-for="ContactModel.Position" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContactModel.Phone" class="control-label"></label>
+                <input asp-for="ContactModel.Phone" class="form-control" />
+                <span asp-validation-for="ContactModel.Phone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContactModel.DopPhone" class="control-label"></label>
+                <input asp-for="ContactModel.DopPhone" class="form-control" />
+                <span asp-validation-for="ContactModel.DopPhone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContactModel.Email" class="control-label"></label>
+                <input asp-for="ContactModel.Email" class="form-control" />
+                <span asp-validation-for="ContactModel.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContactModel.DopEmail" class="control-label"></label>
+                <input asp-for="ContactModel.DopEmail" class="form-control" />
+                <span asp-validation-for="ContactModel.DopEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContactModel.Skype" class="control-label"></label>
+                <input asp-for="ContactModel.Skype" class="form-control" />
+                <span asp-validation-for="ContactModel.Skype" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContactModel.DopSkype" class="control-label"></label>
+                <input asp-for="ContactModel.DopSkype" class="form-control" />
+                <span asp-validation-for="ContactModel.DopSkype" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContactModel.Other" class="control-label"></label>
+                <input asp-for="ContactModel.Other" class="form-control" />
+                <span asp-validation-for="ContactModel.Other" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Создать контакт" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">К списку контактов</a>
+</div>
+
